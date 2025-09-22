@@ -3,8 +3,16 @@ version: 0.2
 phases:
   build:
     commands:
+<<<<<<< HEAD
       - aws deploy push --application-name XXX --s3-location s3://XXX/artifact.zip --source src
 artifacts:
   files:
     - '**/*'
   base-directory: src
+=======
+      - aws deploy push --application-name test0deploy --s3-location s3://rastwork.s3/artifact.zip --source src
+artifacts:
+  files:
+    - '**/*'
+  base-directory: src
+>>>>>>> af73b241ff124a64afbced40dfb4435ed75fe18d
